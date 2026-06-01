@@ -64,9 +64,42 @@ const scrollHeader = () => {
 window.addEventListener('scroll', scrollHeader)
 
 /*=============== SWIPER WORK ===============*/ 
+const swiperWork = new Swiper('.work__swiper', {
+  loop: true,
+  spaceBetween: 24,
+  slidesPerView: 'auto',
+  grabCursor: true,
+  speed : 600,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable : true,
+  },
+  autoplay : {
+   delay : 3000,
+   disableOnInteraction : false,
+  }
+})
 
 
 /*=============== SERVICES ACCORDION ===============*/ 
+const servicesCard = document.querySelectorAll('.services__card'),
+   servicesButtons = document.querySelectorAll('.services__button')
+
+servicesButtons.forEach(button =>{
+   button.addEventListener('click', () =>{
+      const currentCard = button.closest('.services__card')
+      isOpen = currentCard.classList.contains('services-open')
+
+      servicesCard.forEach(card =>{
+         card.classList.replace('services-open', 'services-close')
+      })
+
+      if(!isOpen){
+         currentCard.classList.replace('services-close', 'services-open')
+      }
+   })
+})
 
 
 /*=============== TESTIMONIALS OF DUPLICATE CARDS ===============*/ 
