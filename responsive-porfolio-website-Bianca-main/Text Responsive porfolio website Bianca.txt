@@ -251,13 +251,13 @@ JOURNEY IN CREATIVE DESIGN TODAY.
 ✅.footer__links
 Work - Services - Skills
 
-https://www.facebook.com/bedimcode
-https://www.instagram.com/bedimcode/
+https://www.facebook.com/
+https://www.instagram.com/
 https://www.linkedin.com/
-https://github.com/bedimcode
+https://github.com/
 
 ✅.footer__copy
-&#169; All Rights Reserved By Bedimcode
+&#169; All Rights Reserved By Piyush
 
 ***** CUSTOM CURSOR JS COMMENTS *****
 // Store mouse position
